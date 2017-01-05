@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="woT-lQ-DTU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="roQ-0x-BLZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="PSg-OH-b6G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgB-j8-krO">
+                                <rect key="frame" x="16" y="114" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="c8n-NV-TTo"/>
+                                    <constraint firstAttribute="height" constant="30" id="t7O-25-IYU"/>
+                                </constraints>
+                                <state key="normal" title="存入密码"/>
+                                <connections>
+                                    <action selector="savePassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dC3-w7-PXm"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ijO-Pw-mOf">
+                                <rect key="frame" x="113" y="244" width="201" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Hhf-IY-cYF"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e59-ah-uOe">
+                                <rect key="frame" x="113" y="107" width="210" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="LmN-oW-WRV"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ye1-gs-R6X">
+                                <rect key="frame" x="16" y="243" width="65" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="6oy-oZ-EIM"/>
+                                    <constraint firstAttribute="height" constant="45" id="aQ6-5C-CEF"/>
+                                </constraints>
+                                <state key="normal" title="取出密码"/>
+                                <connections>
+                                    <action selector="achievePassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fNv-wx-Jm0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RgB-j8-krO" firstAttribute="top" secondItem="roQ-0x-BLZ" secondAttribute="bottom" constant="50" id="5VL-cY-lZA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e59-ah-uOe" secondAttribute="trailing" constant="15" id="Ct1-Cv-akT"/>
+                            <constraint firstItem="e59-ah-uOe" firstAttribute="leading" secondItem="RgB-j8-krO" secondAttribute="trailing" constant="15" id="Idj-ma-fbq"/>
+                            <constraint firstItem="RgB-j8-krO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QMN-Dl-MS9"/>
+                            <constraint firstItem="e59-ah-uOe" firstAttribute="top" secondItem="roQ-0x-BLZ" secondAttribute="bottom" constant="43" id="W2B-Ug-RzJ"/>
+                            <constraint firstItem="Ye1-gs-R6X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WB2-RX-3Ia"/>
+                            <constraint firstItem="Ye1-gs-R6X" firstAttribute="top" secondItem="RgB-j8-krO" secondAttribute="bottom" constant="100" id="fBz-gE-R3y"/>
+                            <constraint firstItem="ijO-Pw-mOf" firstAttribute="top" secondItem="e59-ah-uOe" secondAttribute="bottom" constant="92" id="l1U-55-fvz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ijO-Pw-mOf" secondAttribute="trailing" constant="15" id="mmm-Aw-wre"/>
+                            <constraint firstItem="ijO-Pw-mOf" firstAttribute="leading" secondItem="Ye1-gs-R6X" secondAttribute="trailing" constant="15" id="zpX-M5-oQa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oO3-4X-7hT"/>
+                    <connections>
+                        <outlet property="getBtn" destination="Ye1-gs-R6X" id="wm2-fP-IQp"/>
+                        <outlet property="getPassword" destination="ijO-Pw-mOf" id="Xke-Qm-F1B"/>
+                        <outlet property="setBtn" destination="RgB-j8-krO" id="03l-JV-oxF"/>
+                        <outlet property="setPassword" destination="e59-ah-uOe" id="tI7-fK-cXB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283.5" y="-1.5"/>
+        </scene>
+        <!--keychain设置和获取密码-->
+        <scene sceneID="sVy-us-729">
+            <objects>
+                <navigationController title="keychain设置和获取密码" id="woT-lQ-DTU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zkS-49-fZ1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="A09-2Q-eM3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oox-wF-gts" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-182.5" y="-1.1116666666666666"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
